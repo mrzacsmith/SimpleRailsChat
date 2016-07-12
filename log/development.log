@@ -3613,3 +3613,569 @@ Processing by ChatsController#new as HTML
   [1m[35mChat Load (0.3ms)[0m  SELECT "chats".* FROM "chats"
   Rendered chats/new.html.erb within layouts/application (1.8ms)
 Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2016-07-11 22:30:32 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (18.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ChatsController#index as HTML
+  Rendered chats/_form.html.erb (51.7ms)
+  Rendered chats/index.html.erb within layouts/application (58.5ms)
+Completed 200 OK in 644ms (Views: 607.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-07-11 22:30:34 -0600
+Processing by ChatsController#index as HTML
+  Rendered chats/_form.html.erb (2.9ms)
+  Rendered chats/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:30:34 -0600
+Processing by ChatsController#new as HTML
+  [1m[35mChat Load (9.7ms)[0m  SELECT "chats".* FROM "chats"
+  Rendered chats/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 64ms (Views: 53.4ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:30:39 -0600
+Processing by ChatsController#new as HTML
+  [1m[36mChat Load (0.2ms)[0m  [1mSELECT "chats".* FROM "chats"[0m
+  Rendered chats/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:30:39 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:30:39 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:30:39 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:30:39 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:30:39 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:30:39 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:30:39 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:30:39 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:30:39 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:30:39 -0600
+
+
+Started POST "/chats" for ::1 at 2016-07-11 22:30:43 -0600
+Processing by ChatsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a2AMloZexDr3Cj6jBPYgx7VhNB1cO4j4l5xYFlVQuxQXNqhobo94OGBGI129hsFh4H4lfFKFbKuJISll/iygxg==", "chat"=>{"name"=>"testing ", "message"=>"something testing"}, "commit"=>"Create Chat"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (10.8ms)[0m  [1mINSERT INTO "chats" ("name", "message", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "testing "], ["message", "something testing"], ["created_at", "2016-07-12 04:30:43.169183"], ["updated_at", "2016-07-12 04:30:43.169183"]]
+  [1m[35m (9.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (ActiveRecord: 20.7ms)
+
+
+Started GET "/" for ::1 at 2016-07-11 22:30:43 -0600
+Processing by ChatsController#index as HTML
+  Rendered chats/_form.html.erb (1.7ms)
+  Rendered chats/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:30:43 -0600
+Processing by ChatsController#new as HTML
+  [1m[36mChat Load (0.3ms)[0m  [1mSELECT "chats".* FROM "chats"[0m
+  Rendered chats/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:30:48 -0600
+Processing by ChatsController#new as HTML
+  [1m[35mChat Load (0.2ms)[0m  SELECT "chats".* FROM "chats"
+  Rendered chats/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:30:48 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:30:48 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:30:48 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:30:48 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:30:48 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:30:48 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:30:48 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:30:48 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:30:48 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:30:48 -0600
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:30:53 -0600
+Processing by ChatsController#new as HTML
+  [1m[36mChat Load (0.3ms)[0m  [1mSELECT "chats".* FROM "chats"[0m
+  Rendered chats/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:30:53 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:30:53 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:30:53 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:30:53 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:30:53 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:30:53 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:30:53 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:30:53 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:30:53 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:30:53 -0600
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:30:59 -0600
+Processing by ChatsController#new as HTML
+  [1m[35mChat Load (0.2ms)[0m  SELECT "chats".* FROM "chats"
+  Rendered chats/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:30:59 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:30:59 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:30:59 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:30:59 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:30:59 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:30:59 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:30:59 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:30:59 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:30:59 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:30:59 -0600
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:31:05 -0600
+Processing by ChatsController#new as HTML
+  [1m[36mChat Load (0.2ms)[0m  [1mSELECT "chats".* FROM "chats"[0m
+  Rendered chats/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:31:05 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:31:05 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:31:05 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:31:05 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:31:05 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:31:05 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:31:05 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:31:05 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:31:05 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:31:05 -0600
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:31:10 -0600
+Processing by ChatsController#new as HTML
+  [1m[35mChat Load (0.2ms)[0m  SELECT "chats".* FROM "chats"
+  Rendered chats/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:31:10 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:31:10 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:31:10 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:31:10 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:31:10 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:31:10 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:31:10 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:31:10 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:31:10 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:31:10 -0600
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:31:15 -0600
+Processing by ChatsController#new as HTML
+  [1m[36mChat Load (0.2ms)[0m  [1mSELECT "chats".* FROM "chats"[0m
+  Rendered chats/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:31:16 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:31:16 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:31:16 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:31:16 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:31:16 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:31:16 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:31:16 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:31:16 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:31:16 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:31:16 -0600
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:31:21 -0600
+Processing by ChatsController#new as HTML
+  [1m[35mChat Load (0.2ms)[0m  SELECT "chats".* FROM "chats"
+  Rendered chats/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:31:21 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:31:21 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:31:21 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:31:21 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:31:21 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:31:21 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:31:21 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:31:21 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:31:21 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:31:21 -0600
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:31:27 -0600
+Processing by ChatsController#new as HTML
+  [1m[36mChat Load (0.3ms)[0m  [1mSELECT "chats".* FROM "chats"[0m
+  Rendered chats/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:31:27 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:31:27 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:31:27 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:31:27 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:31:27 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:31:27 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:31:27 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:31:27 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:31:27 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:31:27 -0600
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:33:01 -0600
+Processing by ChatsController#new as HTML
+  [1m[35mChat Load (0.3ms)[0m  SELECT "chats".* FROM "chats"
+  Rendered chats/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:33:01 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:33:01 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:33:01 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:33:01 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:33:01 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:33:01 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:33:01 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:33:01 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:33:01 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:33:01 -0600
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:33:06 -0600
+Processing by ChatsController#new as HTML
+  [1m[36mChat Load (0.2ms)[0m  [1mSELECT "chats".* FROM "chats"[0m
+  Rendered chats/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:33:06 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:33:06 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:33:06 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:33:07 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:33:07 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:33:07 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:33:07 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:33:07 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:33:07 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:33:07 -0600
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:33:12 -0600
+Processing by ChatsController#new as HTML
+  [1m[35mChat Load (0.2ms)[0m  SELECT "chats".* FROM "chats"
+  Rendered chats/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:33:12 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:33:12 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:33:12 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:33:12 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:33:12 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:33:12 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:33:12 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:33:12 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:33:12 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:33:12 -0600
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:33:17 -0600
+Processing by ChatsController#new as HTML
+  [1m[36mChat Load (0.2ms)[0m  [1mSELECT "chats".* FROM "chats"[0m
+  Rendered chats/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:33:17 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:33:17 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:33:17 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:33:17 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:33:17 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:33:17 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:33:17 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:33:17 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:33:17 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:33:17 -0600
+
+
+Started GET "/chats/new" for ::1 at 2016-07-11 22:33:22 -0600
+Processing by ChatsController#new as HTML
+  [1m[35mChat Load (0.2ms)[0m  SELECT "chats".* FROM "chats"
+  Rendered chats/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/chat.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:33:22 -0600
+
+
+Started GET "/assets/chats.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 22:33:22 -0600
+
+
+Started GET "/assets/scaffolds.self-863d2eff384c97c2463b6bcfab7d0b40d1a0b462b1f67eed9551ef593aa029b5.css?body=1" for ::1 at 2016-07-11 22:33:22 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-11 22:33:22 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 22:33:22 -0600
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 22:33:22 -0600
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 22:33:22 -0600
+
+
+Started GET "/assets/chat.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:33:22 -0600
+
+
+Started GET "/assets/chats.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 22:33:22 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 22:33:22 -0600
